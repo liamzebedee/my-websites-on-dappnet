@@ -1,0 +1,45 @@
+(base) ➜  example git:(master) ipfs key gen rollerskating
+HIDDEN
+
+ipfs name publish --key rollerskating
+
+
+(base) ➜  cli git:(master) ipfs add -r example/
+added QmNmKbdsVjHDzFRXZJKU7m7g7Ed8QpR1B66T3PFjK8q9Xn example/1.webp
+added QmXbY4RjwT2jwcUG4436n6FsnCWSuJegisatKrPwndpGu4 example/2.jpg
+added QmbGtM3BbPwujEEYdS11uAfc236ZHsgNYhs8rZufA3Y4Xa example/index.html
+added QmYWY1EFwX1g2zuXGnSBA9T27LzvGdEpCyk9sR1GzicBG7 example
+ 86.14 KiB / 86.14 KiB [===============================================================================] 100.00%
+
+
+I changed only index.html
+
+(base) ➜  cli git:(master) ipfs add -r example/
+added QmNmKbdsVjHDzFRXZJKU7m7g7Ed8QpR1B66T3PFjK8q9Xn example/1.webp
+added QmXbY4RjwT2jwcUG4436n6FsnCWSuJegisatKrPwndpGu4 example/2.jpg
+added QmbEPQHDbSd57Z97CBuK1jLCQN6nUjdsVNSAGGcmEubXoX example/index.html
+added QmYzjWvVukWmq3uAKJLFFXnxTj86eVCPDoRYLHag1453pk example
+ 86.36 KiB / 86.36 KiB [===============================================================================] 100.00%
+(base) ➜  cli git:(master) 
+
+
+Notice the hashes are the same!
+
+http://localhost:8080/ipfs/QmYzjWvVukWmq3uAKJLFFXnxTj86eVCPDoRYLHag1453pk/
+
+
+ipfs name publish --key rollerskating QmYzjWvVukWmq3uAKJLFFXnxTj86eVCPDoRYLHag1453pk
+
+
+
+
+(base) ➜  cli git:(master) ipfs add -r example
+added QmNmKbdsVjHDzFRXZJKU7m7g7Ed8QpR1B66T3PFjK8q9Xn example/1.webp
+added QmXbY4RjwT2jwcUG4436n6FsnCWSuJegisatKrPwndpGu4 example/2.jpg
+added QmU8NukaFTgYG8Mcw171FtMfxNwoQRaixauwewdwh48YPU example/index.html
+added Qmd4rmkhpi5NYLdQMGmRxpouSout6VSsHrMKoNxLHsZ4V1 example
+ 86.57 KiB / 86.57 KiB [===============================================================================] 100.00%
+
+
+
+ 
